@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2pD-8z-asM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jGM-kz-Toa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -314,16 +314,41 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="shG-sg-jqM" secondAttribute="height" multiplier="49:15" id="9Mb-Ni-Nfv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbD-0Q-xla">
+                                <rect key="frame" x="91" y="527" width="193" height="68"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="hrF-sV-Cif"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="rkZ-b0-NNv"/>
+                                </constraints>
+                                <state key="normal" title="To special content">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Kbc-Ph-vlk" kind="show" id="kSP-Sd-Xjo"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.16829911859999999" blue="0.19163447359999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ST9-H0-4gt" firstAttribute="trailing" secondItem="shG-sg-jqM" secondAttribute="trailing" constant="16" id="1WR-5j-OL2"/>
+                            <constraint firstItem="IbD-0Q-xla" firstAttribute="leading" secondItem="ST9-H0-4gt" secondAttribute="leading" constant="91" id="5Mk-fu-hgD"/>
+                            <constraint firstItem="ST9-H0-4gt" firstAttribute="bottom" secondItem="IbD-0Q-xla" secondAttribute="bottom" constant="72" id="954-4O-sxk"/>
                             <constraint firstItem="ST9-H0-4gt" firstAttribute="bottom" secondItem="shG-sg-jqM" secondAttribute="bottom" constant="281" id="MNC-qM-Zm6"/>
                             <constraint firstItem="shG-sg-jqM" firstAttribute="top" secondItem="ST9-H0-4gt" secondAttribute="top" constant="217" id="c0a-XP-eZJ"/>
+                            <constraint firstItem="ST9-H0-4gt" firstAttribute="trailing" secondItem="IbD-0Q-xla" secondAttribute="trailing" constant="91" id="iyN-wA-Yle"/>
                             <constraint firstItem="shG-sg-jqM" firstAttribute="leading" secondItem="ST9-H0-4gt" secondAttribute="leading" constant="16" id="xVb-gY-Isj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ST9-H0-4gt"/>
@@ -334,7 +359,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWe-pj-48h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3881" y="27"/>
+            <point key="canvasLocation" x="3880.8000000000002" y="26.53673163418291"/>
+        </scene>
+        <!--newHomeNav-->
+        <scene sceneID="CIi-wH-fZD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserView" referencedIdentifier="newHomeNav" id="Kbc-Ph-vlk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKw-Wp-EDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4538" y="26"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qt8-gO-SIG">

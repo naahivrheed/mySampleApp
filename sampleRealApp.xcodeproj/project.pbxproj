@@ -19,6 +19,8 @@
 		24D593EE216F5ED500F9EA2A /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D593ED216F5ED500F9EA2A /* Slide.swift */; };
 		24D593F0216F6A2300F9EA2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D593EF216F6A2300F9EA2A /* LoginViewController.swift */; };
 		24D593F22171552B00F9EA2A /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D593F12171552B00F9EA2A /* Global.swift */; };
+		24E3D6822181D4E30071893D /* ScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3D6812181D4E30071893D /* ScrollingViewController.swift */; };
+		24E3D6842181D5050071893D /* NextOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E3D6832181D5050071893D /* NextOneViewController.swift */; };
 		24F3EF602173C17600C63D89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24F3EF5F2173C17600C63D89 /* GoogleService-Info.plist */; };
 		60AC9AEB0302E8493E5A398D /* Pods_sampleRealApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1BECC61B8F6B313C665258 /* Pods_sampleRealApp.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		24D593ED216F5ED500F9EA2A /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		24D593EF216F6A2300F9EA2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		24D593F12171552B00F9EA2A /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		24E3D6812181D4E30071893D /* ScrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingViewController.swift; sourceTree = "<group>"; };
+		24E3D6832181D5050071893D /* NextOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextOneViewController.swift; sourceTree = "<group>"; };
 		24F3EF5F2173C17600C63D89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A1BECC61B8F6B313C665258 /* Pods_sampleRealApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sampleRealApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEBC079190EA81375C1C2740 /* Pods-sampleRealApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleRealApp.release.xcconfig"; path = "Target Support Files/Pods-sampleRealApp/Pods-sampleRealApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,8 +114,8 @@
 		247D834F217694C40096558E /* UserView */ = {
 			isa = PBXGroup;
 			children = (
-				247D8350217694EE0096558E /* UserView.storyboard */,
-				247D83532176956C0096558E /* HomeViewController.swift */,
+				24E3D6862181D5750071893D /* Controllers */,
+				24E3D6852181D5620071893D /* Views */,
 			);
 			path = UserView;
 			sourceTree = "<group>";
@@ -133,6 +137,24 @@
 				24D593ED216F5ED500F9EA2A /* Slide.swift */,
 			);
 			path = Slide;
+			sourceTree = "<group>";
+		};
+		24E3D6852181D5620071893D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				247D8350217694EE0096558E /* UserView.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24E3D6862181D5750071893D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				247D83532176956C0096558E /* HomeViewController.swift */,
+				24E3D6812181D4E30071893D /* ScrollingViewController.swift */,
+				24E3D6832181D5050071893D /* NextOneViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9E5FBC8A0A192147ABCA85F2 /* Pods */ = {
@@ -273,10 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E3D6842181D5050071893D /* NextOneViewController.swift in Sources */,
 				247D834D217691B00096558E /* SignupViewController.swift in Sources */,
 				24D593F0216F6A2300F9EA2A /* LoginViewController.swift in Sources */,
 				24D593EE216F5ED500F9EA2A /* Slide.swift in Sources */,
 				240B381F216F5BEF000F994C /* SlideViewController.swift in Sources */,
+				24E3D6822181D4E30071893D /* ScrollingViewController.swift in Sources */,
 				24D593F22171552B00F9EA2A /* Global.swift in Sources */,
 				247D83542176956C0096558E /* HomeViewController.swift in Sources */,
 				240B381D216F5BEF000F994C /* AppDelegate.swift in Sources */,
