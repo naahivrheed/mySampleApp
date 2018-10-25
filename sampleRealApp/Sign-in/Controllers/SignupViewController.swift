@@ -12,8 +12,10 @@ class SignupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        // when the view is about to appear each time.
     }
     
     @IBAction func toLoginPage(_ sender:UIButton) {
