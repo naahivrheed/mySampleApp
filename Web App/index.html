@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+<body>
+  <button type="button" onclick="buttonClicked()">Read from firebase</button>
+  <p id="p1">Text to update</p>
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCGdhSF9_kSqgsJYmdmmSuVUq_paUiPGpw",
+    authDomain: "samplerealapp.firebaseapp.com",
+    databaseURL: "https://samplerealapp.firebaseio.com",
+    projectId: "samplerealapp",
+    storageBucket: "samplerealapp.appspot.com",
+    messagingSenderId: "626178175320"
+  };
+  firebase.initializeApp(config);
+
+  function buttonClicked() {
+    var database = firebase.database();
+
+    return firebase.database().ref('/Users/test').once('value').then(function(snapshot) {
+    var updateText = snapshot.val() || 'nothing';
+      document.getElementById("p1").innerHTML = updateText;
+    });
+
+
+
+  }
+</script>
+
+</html>
