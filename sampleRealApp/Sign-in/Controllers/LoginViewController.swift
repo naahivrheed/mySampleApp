@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     
     // Firebase setup
     var ref:DatabaseReference?
-    var handle:DatabaseHandle?
+    // var handle:DatabaseHandle?
     
     // @IBOutlets
     @IBOutlet weak var emailField:UITextField!
