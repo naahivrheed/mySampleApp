@@ -13,9 +13,9 @@ class SlideViewController: UIViewController, UIScrollViewDelegate {
 
     var slides:[Slide] = []
     
+    //@IBOutlets
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
-    
     
     
     override func viewDidLoad() {
