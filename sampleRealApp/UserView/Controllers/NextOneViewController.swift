@@ -18,14 +18,22 @@ class NextOneViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        // animatingView.center.y -= view.bounds.height
+        animatingView.isHidden = true
+        animatingView.center.x -= view.bounds.width
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 1.5, delay: 0.0, options: [], animations: {
-            // self.animatingView.center.y += self.view.bounds.height
-            // self.animatingView.backgroundColor = UIColor.red
-            self.animatingView.frame = CGRect(x: 0, y: 252, width: 375, height: 143)
-        }, completion: nil)
+        animatingView.isHidden = false
+        UIView.animate(withDuration: 0.8, delay: 0.2, options: [.curveEaseInOut], animations: {
+            self.animatingView.center.x += self.view.bounds.width
+        }, completion: { (true) in
+            let alert = UIAlertController(title: nil, message: "Are you sure you want to delete your account?", preferredStyle: .actionSheet)
+            alert.addAction(.init(title: "Cancel", style: .cancel, handler: { (action) in
+                print("tapped")
+            }))
+            alert.addAction(.init(title: "Delete", style: .destructive, handler: nil))
+            self.present(alert, animated: true)
+        })
+        
     }
 }
