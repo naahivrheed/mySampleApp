@@ -50,7 +50,7 @@
         <!--Weird Scroll View-->
         <scene sceneID="yAc-5b-Fvt">
             <objects>
-                <viewController title="Weird Scroll View" id="YCJ-Yv-8B1" sceneMemberID="viewController">
+                <viewController title="Weird Scroll View" id="YCJ-Yv-8B1" customClass="ScrollingViewController" customModule="sampleRealApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMp-lT-Xnu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,20 +151,46 @@
             </objects>
             <point key="canvasLocation" x="165.59999999999999" y="158.77061469265368"/>
         </scene>
-        <!--This is the next one-->
+        <!--Animations-->
         <scene sceneID="8j7-HC-Jgu">
             <objects>
-                <viewController title="This is the next one" id="Vd6-Jw-Oax" sceneMemberID="viewController">
+                <viewController title="Animations" id="Vd6-Jw-Oax" customClass="NextOneViewController" customModule="sampleRealApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d24-IU-C3c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALx-v7-jAj">
+                                <rect key="frame" x="0.0" y="278" width="375" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO5-Gg-4Mx">
+                                        <rect key="frame" x="274" y="37" width="54" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDw-YV-2Zq">
+                                        <rect key="frame" x="27" y="37" width="60" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Dsf-wI-NDY"/>
                     </view>
+                    <connections>
+                        <outlet property="animatingView" destination="ALx-v7-jAj" id="rBR-is-3NP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYT-v9-uNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2570" y="159"/>
+            <point key="canvasLocation" x="2568.8000000000002" y="158.77061469265368"/>
         </scene>
     </scenes>
 </document>
