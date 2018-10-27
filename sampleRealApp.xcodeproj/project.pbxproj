@@ -12,9 +12,12 @@
 		240B3822216F5BEF000F994C /* Sign-in.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240B3820216F5BEF000F994C /* Sign-in.storyboard */; };
 		240B3824216F5BF1000F994C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240B3823216F5BF1000F994C /* Assets.xcassets */; };
 		240B3827216F5BF1000F994C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240B3825216F5BF1000F994C /* LaunchScreen.storyboard */; };
+		241B8E2A21832F42002E3245 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B8E2921832F42002E3245 /* SideMenuViewController.swift */; };
 		247D834D217691B00096558E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247D834C217691B00096558E /* SignupViewController.swift */; };
 		247D8351217694EE0096558E /* UserView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247D8350217694EE0096558E /* UserView.storyboard */; };
 		247D83542176956C0096558E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247D83532176956C0096558E /* HomeViewController.swift */; };
+		24903E572184BB4500270362 /* OtherSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24903E562184BB4500270362 /* OtherSideMenuViewController.swift */; };
+		24903E5A2184BD7900270362 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24903E592184BD7900270362 /* RoundedButton.swift */; };
 		24D593EC216F5E8D00F9EA2A /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D593EB216F5E8D00F9EA2A /* Slide.xib */; };
 		24D593EE216F5ED500F9EA2A /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D593ED216F5ED500F9EA2A /* Slide.swift */; };
 		24D593F0216F6A2300F9EA2A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D593EF216F6A2300F9EA2A /* LoginViewController.swift */; };
@@ -33,9 +36,12 @@
 		240B3823216F5BF1000F994C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		240B3826216F5BF1000F994C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		240B3828216F5BF1000F994C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		241B8E2921832F42002E3245 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		247D834C217691B00096558E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		247D8350217694EE0096558E /* UserView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserView.storyboard; sourceTree = "<group>"; };
 		247D83532176956C0096558E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		24903E562184BB4500270362 /* OtherSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherSideMenuViewController.swift; sourceTree = "<group>"; };
+		24903E592184BD7900270362 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		24D593EB216F5E8D00F9EA2A /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		24D593ED216F5ED500F9EA2A /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		24D593EF216F6A2300F9EA2A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -89,10 +95,10 @@
 		240B381B216F5BEF000F994C /* sampleRealApp */ = {
 			isa = PBXGroup;
 			children = (
+				24903E582184BD6100270362 /* Resources */,
 				247D834F217694C40096558E /* UserView */,
 				247D834E217694490096558E /* Sign-in */,
 				240B381C216F5BEF000F994C /* AppDelegate.swift */,
-				24D593F12171552B00F9EA2A /* Global.swift */,
 				240B3823216F5BF1000F994C /* Assets.xcassets */,
 				240B3825216F5BF1000F994C /* LaunchScreen.storyboard */,
 				240B3828216F5BF1000F994C /* Info.plist */,
@@ -130,6 +136,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		24903E582184BD6100270362 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24D593F12171552B00F9EA2A /* Global.swift */,
+				24903E592184BD7900270362 /* RoundedButton.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		24D593EA216F5E6E00F9EA2A /* Slide */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +168,8 @@
 				247D83532176956C0096558E /* HomeViewController.swift */,
 				24E3D6812181D4E30071893D /* ScrollingViewController.swift */,
 				24E3D6832181D5050071893D /* NextOneViewController.swift */,
+				241B8E2921832F42002E3245 /* SideMenuViewController.swift */,
+				24903E562184BB4500270362 /* OtherSideMenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -295,14 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24903E572184BB4500270362 /* OtherSideMenuViewController.swift in Sources */,
 				24E3D6842181D5050071893D /* NextOneViewController.swift in Sources */,
 				247D834D217691B00096558E /* SignupViewController.swift in Sources */,
 				24D593F0216F6A2300F9EA2A /* LoginViewController.swift in Sources */,
 				24D593EE216F5ED500F9EA2A /* Slide.swift in Sources */,
 				240B381F216F5BEF000F994C /* SlideViewController.swift in Sources */,
 				24E3D6822181D4E30071893D /* ScrollingViewController.swift in Sources */,
+				24903E5A2184BD7900270362 /* RoundedButton.swift in Sources */,
 				24D593F22171552B00F9EA2A /* Global.swift in Sources */,
 				247D83542176956C0096558E /* HomeViewController.swift in Sources */,
+				241B8E2A21832F42002E3245 /* SideMenuViewController.swift in Sources */,
 				240B381D216F5BEF000F994C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
